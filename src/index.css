@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#nav-bar {
+    background-color: rgb(62, 62, 170);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-container {
+    /* border: 2px solid black; */
+    width: 33%;
+    color: white;
+}
+
+.nav-item-container {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+
+
+.nav-item-container a {
+    /* border: 2px solid green; */
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.nav-search-bar {
+    background-color: beige;
+    background-image: url('./searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.Login-top-container {
+    border: 2px solid black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#lock-circle-container {
+    /* background-color: red; */
+    padding: 2px;
+    margin: 4px;
+    width: 10%;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 20px;
 }
