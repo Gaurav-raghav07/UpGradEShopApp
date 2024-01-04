@@ -1,0 +1,314 @@
+[{
+  "_id": {
+    "$oid": "658af6b28017b41b516cda89"
+  },
+  "name": "Salmon - Atlantic, Skin On",
+  "category": "food",
+  "price": 2670.12,
+  "description": "Subluxation of unspecified parts of right shoulder girdle, sequela",
+  "manufacturer": "Hyundai",
+  "availableItems": 54,
+  "imageUrl": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
+  "version": 0,
+  "_class": "com.upgrad.ecommerce.models.Product"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e1e"
+  },
+  "name": "Wasabi Powder",
+  "category": "electronics",
+  "price": 505.7,
+  "description": "Insect bite (nonvenomous) of lower back and pelvis, initial encounter",
+  "manufacturer": "Ford",
+  "availableItems": 43,
+  "imageUrl": "http://dummyimage.com/149x100.png/ff4444/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e1f"
+  },
+  "name": "Nutmeg - Ground",
+  "category": "food",
+  "price": 2930.36,
+  "description": "Unspecified focal traumatic brain injury with loss of consciousness of any duration with death due to other cause prior to regaining consciousness, initial encounter",
+  "manufacturer": "Suzuki",
+  "availableItems": 38,
+  "imageUrl": "http://dummyimage.com/194x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e20"
+  },
+  "name": "Bread - Bistro Sour",
+  "category": "food",
+  "price": 434.81,
+  "description": "Pressure ulcer of buttock",
+  "manufacturer": "Ford",
+  "availableItems": 42,
+  "imageUrl": "http://dummyimage.com/231x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e21"
+  },
+  "name": "Versatainer Nc - 9388",
+  "category": "food",
+  "price": 8124.27,
+  "description": "Unspecified fracture of upper end of unspecified humerus, initial encounter for closed fracture",
+  "manufacturer": "Mercedes-Benz",
+  "availableItems": 60,
+  "imageUrl": "http://dummyimage.com/235x100.png/ff4444/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e22"
+  },
+  "name": "Irish Cream - Butterscotch",
+  "category": "clothing",
+  "price": 7149.28,
+  "description": "Open bite of other finger without damage to nail, sequela",
+  "manufacturer": "Ford",
+  "availableItems": 92,
+  "imageUrl": "http://dummyimage.com/130x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e23"
+  },
+  "name": "Wine - Beaujolais Villages",
+  "category": "electronics",
+  "price": 1214.87,
+  "description": "Nondisplaced intertrochanteric fracture of right femur, subsequent encounter for open fracture type I or II with delayed healing",
+  "manufacturer": "GMC",
+  "availableItems": 36,
+  "imageUrl": "http://dummyimage.com/196x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e24"
+  },
+  "name": "Appetizer - Mini Egg Roll, Shrimp",
+  "category": "food",
+  "price": 8.07,
+  "description": "Unspecified adverse effect of drug or medicament, subsequent encounter",
+  "manufacturer": "Dodge",
+  "availableItems": 84,
+  "imageUrl": "http://dummyimage.com/159x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e25"
+  },
+  "name": "Nantucket - 518ml",
+  "category": "sports",
+  "price": 6329.22,
+  "description": "Unspecified fracture of shaft of left fibula, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion",
+  "manufacturer": "GMC",
+  "availableItems": 45,
+  "imageUrl": "http://dummyimage.com/176x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e26"
+  },
+  "name": "Pastry - Carrot Muffin - Mini",
+  "category": "home decor",
+  "price": 8461.01,
+  "description": "Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)",
+  "manufacturer": "Nissan",
+  "availableItems": 99,
+  "imageUrl": "http://dummyimage.com/221x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e27"
+  },
+  "name": "Salmon - Sockeye Raw",
+  "category": "sports",
+  "price": 5222.14,
+  "description": "Toxic effects of tetrachloroethylene",
+  "manufacturer": "Porsche",
+  "availableItems": 48,
+  "imageUrl": "http://dummyimage.com/184x100.png/5fa2dd/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e28"
+  },
+  "name": "Wine - Alsace Gewurztraminer",
+  "category": "books",
+  "price": 8329.66,
+  "description": "Displaced fracture of base of other metacarpal bone, subsequent encounter for fracture with malunion",
+  "manufacturer": "Kia",
+  "availableItems": 78,
+  "imageUrl": "http://dummyimage.com/219x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e29"
+  },
+  "name": "Yogurt - Banana, 175 Gr",
+  "category": "beauty",
+  "price": 4189.65,
+  "description": "Pressure ulcer of left elbow, stage 3",
+  "manufacturer": "Lincoln",
+  "availableItems": 17,
+  "imageUrl": "http://dummyimage.com/241x100.png/ff4444/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e2a"
+  },
+  "name": "Pepsi - Diet, 355 Ml",
+  "category": "electronics",
+  "price": 9690.57,
+  "description": "Subluxation and dislocation of foot",
+  "manufacturer": "Bentley",
+  "availableItems": 68,
+  "imageUrl": "http://dummyimage.com/167x100.png/ff4444/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e2b"
+  },
+  "name": "Fond - Neutral",
+  "category": "toys",
+  "price": 5546.52,
+  "description": "Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye",
+  "manufacturer": "Mercedes-Benz",
+  "availableItems": 13,
+  "imageUrl": "http://dummyimage.com/219x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e2c"
+  },
+  "name": "Wine - White, Gewurtzraminer",
+  "category": "beauty",
+  "price": 6731.36,
+  "description": "Psychomotor deficit following cerebral infarction",
+  "manufacturer": "BMW",
+  "availableItems": 25,
+  "imageUrl": "http://dummyimage.com/137x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e2d"
+  },
+  "name": "Corn Kernels - Frozen",
+  "category": "clothing",
+  "price": 9889.4,
+  "description": "Late congenital neurosyphilis [juvenile neurosyphilis]",
+  "manufacturer": "Geo",
+  "availableItems": 20,
+  "imageUrl": "http://dummyimage.com/121x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e2e"
+  },
+  "name": "Lettuce - Lolla Rosa",
+  "category": "electronics",
+  "price": 4899.51,
+  "description": "Unspecified physeal fracture of phalanx of right toe, sequela",
+  "manufacturer": "Maserati",
+  "availableItems": 43,
+  "imageUrl": "http://dummyimage.com/159x100.png/5fa2dd/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e2f"
+  },
+  "name": "Pork - Smoked Back Bacon",
+  "category": "home decor",
+  "price": 3655.08,
+  "description": "Adhesions due to foreign body accidentally left in body following aspiration, puncture or other catheterization",
+  "manufacturer": "Acura",
+  "availableItems": 100,
+  "imageUrl": "http://dummyimage.com/109x100.png/5fa2dd/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e30"
+  },
+  "name": "Drambuie",
+  "category": "home decor",
+  "price": 4717.17,
+  "description": "Bitten by other rodent, subsequent encounter",
+  "manufacturer": "Mazda",
+  "availableItems": 51,
+  "imageUrl": "http://dummyimage.com/121x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e31"
+  },
+  "name": "Bar - Granola Trail Mix Fruit Nut",
+  "category": "automotive",
+  "price": 6362.95,
+  "description": "Other specified sprain of wrist",
+  "manufacturer": "Dodge",
+  "availableItems": 85,
+  "imageUrl": "http://dummyimage.com/172x100.png/5fa2dd/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e32"
+  },
+  "name": "Cookies - Englishbay Chochip",
+  "category": "books",
+  "price": 7299.15,
+  "description": "Struck by other hit or thrown ball, subsequent encounter",
+  "manufacturer": "Toyota",
+  "availableItems": 43,
+  "imageUrl": "http://dummyimage.com/150x100.png/dddddd/000000"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e33"
+  },
+  "name": "Nantucket - Pomegranate Pear",
+  "category": "clothing",
+  "price": 8438.58,
+  "description": "Papulosquamous disorders in diseases classified elsewhere",
+  "manufacturer": "Ford",
+  "availableItems": 66,
+  "imageUrl": "http://dummyimage.com/191x100.png/5fa2dd/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e34"
+  },
+  "name": "Beer - True North Strong Ale",
+  "category": "automotive",
+  "price": 6749.21,
+  "description": "Asphyxiation due to smothering under pillow, assault, sequela",
+  "manufacturer": "Buick",
+  "availableItems": 44,
+  "imageUrl": "http://dummyimage.com/114x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e35"
+  },
+  "name": "Wine - Casillero Deldiablo",
+  "category": "books",
+  "price": 7360.47,
+  "description": "Disorders of visual pathways in (due to) vascular disorders, left side",
+  "manufacturer": "Pontiac",
+  "availableItems": 82,
+  "imageUrl": "http://dummyimage.com/138x100.png/cc0000/ffffff"
+},
+{
+  "_id": {
+    "$oid": "658af6e1bb8f629a58697e36"
+  },
+  "name": "Turnip - White",
+  "category": "electronics",
+  "price": 5982.55,
+  "description": "Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema",
+  "manufacturer": "Chevrolet",
+  "availableItems": 44,
+  "imageUrl": "http://dummyimage.com/101x100.png/ff4444/ffffff"
+}]

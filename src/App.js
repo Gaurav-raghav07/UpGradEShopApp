@@ -11,8 +11,7 @@ function App () {
         <Router>
             <ButtonAppBar />
                 <Routes>
-                    <Route path="/Login" element={<SignInPage />}>
-                    </Route>
+                    <Route path="/Login" element={<SignInPage />}></Route>
                     <Route path="/" element={<SignUp />}></Route>
                     <Route path="/Products" element={<Products />}></Route>
                 </Routes>
