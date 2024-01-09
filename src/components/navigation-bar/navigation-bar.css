@@ -1,0 +1,40 @@
+/* navigation-bar.css */
+.navbar .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}  
+
+.navbar-title {
+    padding: 10px;
+}
+
+.auth-links {
+    display: flex;
+}
+
+.login-link,
+.signup-link {
+    padding: 10px;
+    color: white;
+    /* Add some spacing between the links */
+}
+
+.search-input{
+    color: white;
+}
+
+.feature-links {
+    display: flex;
+}
+
+.home-link, .add-products-link {
+    padding: 10px;
+    /* Add some spacing between the links */
+}
+
+.search-bar{
+    width: 450px;
+    background-color: #757ce8;
+    border-radius: 5px;
+}

@@ -3,6 +3,7 @@ import { LockOutlined } from '@mui/icons-material';
 import { Paper, TextField, Typography, Button } from '@mui/material';
 import {Box,Stack} from '@mui/material';
 import {Link, Navigate} from "react-router-dom";
+import "./signup.css";
 
 
 class SignUp extends Component{ 
@@ -60,9 +61,12 @@ class SignUp extends Component{
                     textAlign="center"
                 >
                     <Box id='lock-circle-container'>
-                        <LockOutlined />
+                        <LockOutlined className="lock-icon" />
                     </Box>
                     <Typography variant='subtitle1'>Sign Up</Typography>
+                    <div className="signup-form">
+                        <div className="signup-form-fields">
+                            <div className="first-name">
                     <TextField
                         required
                         id="outlined-required"
@@ -72,6 +76,8 @@ class SignUp extends Component{
                         sx={{width:'100%'}}
                         onChange={this.formHandler}
                         />
+                        </div>
+            <div className="last-name">
                     <TextField
                         required
                         id="outlined-required"
@@ -81,6 +87,8 @@ class SignUp extends Component{
                         sx={{width:'100%'}}
                         onChange={this.formHandler}
                         />
+                        </div>
+            <div className="email">
                         <TextField
                         required
                         id="outlined-required"
@@ -90,6 +98,8 @@ class SignUp extends Component{
                         sx={{width:'100%'}}
                         onChange={this.formHandler}
                         />
+                        </div>
+            <div className="password">
                         <TextField
                         required
                         id="outlined-required"
@@ -99,6 +109,8 @@ class SignUp extends Component{
                         sx={{width:'100%'}}
                         onChange={this.formHandler}
                         />
+                        </div>
+            <div className="confirm-password">
                         <TextField
                         required
                         id="outlined-required"
@@ -106,6 +118,8 @@ class SignUp extends Component{
                         placeholder=''
                         sx={{width:'100%'}}
                         />
+                        </div>
+            <div className="contact-number">
                         <TextField
                         required
                         id="outlined-required"
@@ -115,13 +129,17 @@ class SignUp extends Component{
                         sx={{width:'100%'}}
                         onChange={this.formHandler}
                         />
-                    <Button variant="contained" sx={{width:'100%'}} onClick={this.SignUpHandler}>SIGN UP</Button>
+
+</div>
+          </div>
+                    <Button className="signup-button" variant="contained" sx={{width:'100%'}} onClick={this.SignUpHandler}>SIGN UP</Button>
                     {this.state.ShouldRedirect ? (
                         <Navigate replace to="/Login" />
                     ) : null}
                     <Box sx={{width:'100%',textAlign:'end'}}>
-                        <Link to="/Login" sx={{color:'#3f51b5'}}>Already have an account? Sign In</Link>
+                    <Link to="/login" sx={{ color: "#3f51b5" }} className="login-form-link">Already have an account? Sign In</Link>
                     </Box>
+                    </div>
                 </Stack>
             </Paper>
         </Box>

@@ -2,35 +2,42 @@ import React, {Component} from "react";
 import { Box, Card, CardContent, CardMedia, CardActions, Typography,Button,IconButton, Stack } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+import { Navigate } from 'react-router-dom';
+import CategoryToggleButton from "../../CategoryTab";
 
-
-const ProductCard = ({imgPath, imgDesc, imgName}) => (
-    <Card sx={{ margin:'20px',minHeight: 400,maxWidth:400, minWidth: 0}}>
+const ProductCard = ({proItem,userRole,addFunction}) => (
+    <Card sx={{ margin:'20px',minHeight: 400,maxWidth:400, minWidth: 0, key:proItem._id.$oid}}>
         <CardMedia 
             component={"img"}
             alt="Sports shoes"
             sx={{ height: 200,width: 400 }}
-            image={imgPath}
+            image={proItem.imageUrl}
         />
 
         <CardContent>
-            <Typography variant="h5">{imgName}</Typography>
-            <Typography variant="subtitle1">{imgDesc}</Typography>
+            <Typography variant="h5">{proItem.name}</Typography>
+            <Typography variant="subtitle1">{proItem.description}</Typography>
         </CardContent>
         <CardActions>
-            <Button size="small" variant="contained" onClick={(imgPath,imgDesc,imgName) => this.AddItemsToCart(imgPath,imgDesc,imgName)}>Buy</Button>
+            <Button size="small" variant="contained" onClick={()=>addFunction(proItem)}>Buy</Button>
+            {userRole === "ADMIN" ? (
+            <>
             <IconButton aria-label="delete" disabled color="primary">
                 <DeleteIcon />
             </IconButton>
             <IconButton aria-label="delete" disabled color="primary">
                 <EditIcon />
             </IconButton>
+            </>
+            ) : null}
         </CardActions>
     </Card>
 );
 
 class Products extends Component {
     state = {
+        loggedIn : true,
+        userRole : "USER",
         cart : [],
         items: [{
             "_id": {
@@ -154,29 +161,30 @@ class Products extends Component {
           }]
     };
 
-    AddItemsToCart = ({imgPath, imgDesc, imgName}) => {
+    AddItemsToCart = function (proItem) {
         this.setState({
-            cart : [...this.state.cart,{"itemName": imgName}]
+            cart : [...this.state.cart, {...proItem,qty: 1}]
         })
         console.log(this.state.cart)
     };
-
+    
     render = function() {
-        return (
-            <Box>
+        return this.state.loggedIn ? (
+            <Box sx={{textAlign:"center",margin:'10px 10px'}}>
+                <CategoryToggleButton />
                 <Stack 
                     direction="row"
                     flexWrap="wrap"
-                    justifyContent="center"
+                    justifyContent="space-around"
                     alignItems="center"
                     spacing={{xs: 3, sm: 3}}
                     textAlign="center"
                 >
-                    {this.state.items.map((proItem) => <ProductCard imgName={proItem.name} imgPath={proItem.imageUrl} imgDesc={proItem.description} /> )}
+                    {this.state.items.map((proItem) => <ProductCard proItem={proItem} userRole = {this.state.userRole} addFunction={proItem => this.AddItemsToCart(proItem)}/> )}
                 </Stack>
             </Box>
             
-        );
+        ): <Navigate replace to="/Login" />;
     }
 };
 

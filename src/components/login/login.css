@@ -1,0 +1,25 @@
+.lock-icon {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.signin-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.email,
+.password,
+.signin-button
+{
+    margin: 10px 0 10px 0;
+}
+
+.signup-form-link {
+display: block;
+float: left;
+margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+.lock-icon {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.signup-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.first-name,
+.last-name,
+.email,
+.password,
+.confirm-password,
+.contact-number,
+.signup-button
+{
+    margin: 10px 0 10px 0;
+}
+
+.login-form-link {
+display: block;
+float: left;
+margin-top: 10px;
+}
