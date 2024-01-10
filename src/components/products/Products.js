@@ -4,7 +4,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { Link,Navigate,BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CategoryToggleButton from "../../CategoryTab";
-import ProductsPage from "../../ProductsPage";
 
 const ProductCard = ({proItem,userRole,addFunction}) => (
     <Card sx={{ margin:'20px',minHeight: 400,maxWidth:400, minWidth: 0, key: proItem.id}}>
