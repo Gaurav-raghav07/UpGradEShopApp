@@ -26,27 +26,30 @@ class SignUp extends Component{
     SignUpHandler = async () => {
         console.log(this.state);
 
-        // const callSignUpAPi = await fetch("http://localhost:8080/api/auth/signup", 
-        // { 
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({
-        //         "email": this.state.Email,
-        //         "password": this.state.Password,
-        //         "firstName": this.state.FirstName,
-        //         "lastName": this.state.LastName,
-        //         "contactNumber": this.state.ContactNumber
-        //     })
-        // }
-        // );
-
-        // const resolveCategories = await callSignUpAPi.json();
-
-        // console.log(resolveCategories);
+        const callSignUpAPi = await fetch("http://localhost:8080/api/auth/signup", 
+        { 
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                "email": this.state.Email,
+                "password": this.state.Password,
+                "firstName": this.state.FirstName,
+                "lastName": this.state.LastName,
+                "contactNumber": this.state.ContactNumber
+            })
+        }
+        );
+        try {
+            const resolveCategories = await callSignUpAPi.json();
+            this.setState({
+                ShouldRedirect: true
+            });
+        } catch (error) {
+            console.log('error - ',error);    
+        }
         
-        this.setState({
-            ShouldRedirect: true
-        });
+        
+        
 
     }
     render = function() {

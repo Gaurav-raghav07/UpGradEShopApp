@@ -2,12 +2,13 @@ import * as React from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-export default function CategoryToggleButton() {
+export default function CategoryToggleButton({onCategorySet}) {
   const [alignment, setAlignment] = React.useState('All');
   const [proCategory, setProCategory] = React.useState([]);
 
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
+    onCategorySet(alignment);
   };
 
   const fetchCategories = async () => {

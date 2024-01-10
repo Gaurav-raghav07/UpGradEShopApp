@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import CategoryToggleButton from "./CategoryTab";
 import { Box,Grid,Typography,TextField,useTheme,Button } from "@mui/material";
 
-function ProductsPage() {
+function ProductsPage({productiid}) {
     const [productDetails, setProductDetails] = useState([]);
     const theme = useTheme();
     const fetchProduct = async () => {
-        const callFetchProductDetails = await fetch("http://localhost:8080/api/products/659af401aea9115b14d3bc6f", 
+        const callFetchProductDetails = await fetch("http://localhost:8080/api/products/"+productiid, 
             { 
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' },

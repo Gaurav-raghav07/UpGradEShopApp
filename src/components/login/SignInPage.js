@@ -4,12 +4,14 @@ import { LockOutlined } from '@mui/icons-material';
 import { Paper, TextField, Typography, Button } from '@mui/material';
 import {Box,Stack} from '@mui/material';
 import "./login.css";
+import { red } from '@mui/material/colors';
 
 const SignInPage = () => {
     const [userEmail, setUserEmail] = useState('');
     const [userPassword, setUserPass] = useState(''); 
     const [shouldRedirect, setShouldRedFlag] = useState(false);
-
+    const [isLoggedIn, setIsLoggedIn] = useState('');
+    const [showError, setShowError] = useState(false);
     const LogInHandler = async () => {
         
         const callSignUpAPi = await fetch("http://localhost:8080/api/auth/signin", 
@@ -22,12 +24,15 @@ const SignInPage = () => {
             })
         }
         );
-
-        const resolveCategories = await callSignUpAPi.json();
-
-        console.log(resolveCategories);
-
-        setShouldRedFlag(true);
+        try {
+            const resolveCategories = await callSignUpAPi.json();
+            console.log("Login Successful");
+            setIsLoggedIn(resolveCategories.id);
+            setShouldRedFlag(true);
+        } catch (error) {
+            console.log("error - ",error);
+            setShowError(true);
+        }
     }
 
     return (
@@ -80,6 +85,11 @@ const SignInPage = () => {
                         <Button variant="contained" sx={{width:'100%'}} onClick={() => LogInHandler()}>SIGN IN</Button>
                         {shouldRedirect ? (
                             <Navigate replace to="/Products" />
+                        ) : null}
+                        {showError ? (
+                            <Typography variant="subtitle1" sx={{color: 'red'}} gutterBottom>
+                            Login Failed
+                          </Typography>
                         ) : null}
                     </div>
                 </Stack>
